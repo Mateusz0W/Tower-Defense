@@ -4,7 +4,7 @@
 #define M_PI           3.14159265358979323846
 
 void Bullet::fly(float deltaTime,double angle) {
-	std::cout<<Tower::_angle<<std::endl;
+
 	if (Tower::_shoot) {
 		sf::Vector2f position = bullet.getPosition();
 		position.x += _speed * cos(angle * M_PI / 180.0) * deltaTime *-1;
